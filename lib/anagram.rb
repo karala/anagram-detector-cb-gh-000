@@ -1,4 +1,3 @@
-# Your code goes here!
 class Anagram
    attr_accessor :word
 
@@ -6,7 +5,7 @@ class Anagram
      @word = word
    end
 
-   def match(array_saperated_by_spaces)
-     some_word = array_saperated_by_spaces.split(" ")
+   def match(array)
+    array.detect {|s| s.split("").sort == @word.split("").sort}
    end
 end
