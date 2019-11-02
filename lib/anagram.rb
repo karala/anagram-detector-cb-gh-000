@@ -6,7 +6,7 @@ class Anagram
      @word = word
    end
 
-   def match(some_words)
-
+   def match(array_saperated_by_spaces)
+     some_word = array_saperated_by_spaces.split(" ")
    end
 end
